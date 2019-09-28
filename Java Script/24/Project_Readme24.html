@@ -1,0 +1,35 @@
+﻿<html>
+    <head>
+    <title> [R-EXP] </title> 
+ 
+    </head>
+    <body>
+        <h1 id="h"> only jordanian numbers  </h1>
+        <input id="txt" placeholder="0 7 (7,8,9) 1 2 3 4 5 6 7" />
+        <br><br>
+        <button onclick="check();"> Check</button>
+       
+        
+        
+        
+         <script>
+           
+    function check() {
+                 var text=window.txt.value;
+             var patt;
+             patt =/^07[7,8,9]\d{7}$/;
+             var b =patt.test(text);
+             if(b){
+                  window.h.innerHTML="<div style='color:#0f0;'>Accept</div>";
+             }
+             else{
+                 window.h.innerHTML="<div style='color:#f00;'>Wrong</div>";
+             }
+             
+    }
+             
+        </script>
+        
+    </body>
+
+</html>

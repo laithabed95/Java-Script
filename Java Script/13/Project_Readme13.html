@@ -1,0 +1,51 @@
+﻿<html>
+    <head>
+    <title> onmouse dblclick down up over out enter leave move </title> 
+        
+        <style>
+            div{
+                width: 300px;
+                height: 200px;
+                border: 2px solid blue;               
+            }
+            body{margin:0;}
+            img{
+                width: 100px;
+                height: 100px;
+             
+            }
+        </style>
+    </head>
+    <body> 
+        
+        <div onmousemove="getXY(event);" onmouseout="window.lbl.innerHTML='out'" ></div>
+        
+        <p id="lbl"> put the mouse in this box</p>
+        <img src="arrow.jpg" onmouseover="big(this);" onmouseout="small(this);" />
+        <img src="arrow.jpg" style="opacity:0.5;" onmouseover="this.style='opacity:1;'"  onmouseout="this.style='opacity:0.5;'" />
+        <h1 ondblclick="this.style.color='Red';">Double click To  change this Color (ondblclick) </h1>
+        <h1 onmousedown="this.style.color='blue';" onmouseup="this.style.color='black';">Hold click in  this text(onmousedown& onmouseup)</h1>
+        <h1 onmouseenter="this.style.color='red';" onmouseleave="this.style.color='black';">On mouse enter & leave (onmouseenter & onmouseleave ) </h1>    
+        <h1 onmouseover="this.style.color='red';" onmouseout="this.style.color='black';">Welcome (onmouseover & onmouseout ) </h1>
+    </body>
+    <script>
+        function big (img) {
+            img.style.width="150px";
+            img.style.height="150px"
+        }
+         function small (img) {
+            img.style.width="100px";
+            img.style.height="100px"
+        }
+        function getXY (e) {
+            var x=e.clientX;
+            var y=e.clientY;
+            
+            window.lbl.innerHTML="X ="+x+ " Y ="+y;     
+        }
+        
+    
+    
+    </script>
+
+</html>

@@ -1,0 +1,47 @@
+﻿<html>
+    <head>
+    <title> events onclick  </title> 
+        <script>
+        function Show (){
+            
+            var user = window.txtUser.value;
+            var pass=window.txtPass.value;
+            var msg="<hr>" +user+ "<hr>"+ pass +"<hr>";
+            window.lbl2.innerHTML=msg;
+      
+        }
+                
+        </script>
+    
+    </head>
+    <body>
+    <h1>Login Form</h1>
+        
+       <table>
+           <tr>
+               <td> User Name</td>
+               <td> <input id="txtUser" value="Laith"></td>
+           </tr>
+           
+           <tr>
+               <td> Password </td>
+               <td> <input id="txtPass"value="12345"> </td>
+           </tr>
+           <tr>
+               <td> <button onclick="Show();">Login</button> </td>
+           </tr>
+          <tr>
+              <td>
+              <h1 id="lbl2"> </h1>
+              </td>
+           </tr>
+        
+        
+        
+        </table>
+        
+        
+        
+    </body>
+
+</html>

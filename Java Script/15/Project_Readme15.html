@@ -1,0 +1,65 @@
+﻿<html>
+    <head>
+    <title>javascript operators </title> 
+    
+        <script>
+            function println (text) {
+                window.msg.innerHTML+=text+"<br>";               
+            }
+            function run () {
+                var num1=parseInt(window.txtnum1.value);
+                var num2=parseInt(window.txtnum2.value);
+                
+                if(num1>num2){
+                    println("num1 > num2 ");
+                    
+                }
+                if(num1 !=num2) {
+                    
+                    println("Num1 != num2 ");
+                }
+                else{
+                    println("num 1 == num2 ");
+                }
+                
+            }
+        
+      
+          
+        </script>
+        
+        
+    </head>
+    <body>     
+          <table>
+              <tr>
+                  <td>
+                      <label> Number 1:</label>
+                  </td>
+                  <td>
+                      <input id="txtnum1"/>
+                  </td>  
+              </tr>
+                <tr>
+                  <td>
+                      <label> Number 2:</label>
+                  </td>
+                  <td>
+                      <input id="txtnum2"/>
+                  </td>  
+              </tr>
+              <tr>
+                  <td>
+                      <button onclick="window.msg.innerHTML='';run();"> commit!</button>              
+                  </td>           
+              </tr>
+              <tr>
+                  <td>
+                      <p id="msg"> </p>
+                  </td>
+              </tr>
+           
+           </table>
+    </body>
+
+</html>

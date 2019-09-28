@@ -1,0 +1,45 @@
+﻿<html>
+    <head>
+    <title> loop statement</title> 
+    
+        <script>
+            function println (text) {
+               document.write(text +"<br>");            
+            }
+            
+            println("nested  loop");
+            for (x=1;x<=5;x++){
+                println(" * " );
+               
+                for(y=3;y<=x;y++){
+                    println(" !");
+  
+                }               
+            } 
+            println("while")
+            var x=1;
+            while (x<=3){
+                println(x);
+                x++;
+            }
+            println("do while ");
+            var z=1;
+            do {
+                println(z);
+                z++
+                
+            }
+            while(false);
+            
+            
+            
+            
+        </script>
+        
+        
+    </head>
+    <body>     
+        
+    </body>
+
+</html>

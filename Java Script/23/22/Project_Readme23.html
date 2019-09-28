@@ -1,0 +1,47 @@
+﻿<html>
+    <head>
+    <title> Timer setTimeout clearTimeout setInterval clearInterval </title> 
+ 
+    </head>
+    <body>
+        <div id="tim"></div>
+        <div id="d1"> </div>
+        <h2> if you ddnt stop the timer clock will stop after 10 sec </h2>
+        
+        
+        <h1 id="h"> welcome to the egyptian sites</h1>
+        
+        <script>
+            var val=0;
+            var myH=setInterval(function (){
+                window.h.style.fontSize=val++;
+                if (val>60){
+                    clearInterval(myH);
+                    }
+            },40);
+        
+        
+        </script>
+        
+        <button onclick="clearInterval(myT);"> Stop Time</button>
+     <script>
+         function createBtn (){window.d1.innerHTML="<Button> OK </Botton";
+             
+         }
+         setTimeout(createBtn,3000);
+        
+         
+        function stopBtn() {
+            clearTimeout(mybtn);
+        }
+        var myT= setInterval(function(){
+            window.tim.innerHTML=new Date().toLocaleTimeString()},1000);
+         
+         setTimeout(function(){clearInterval(myT)},10000);
+         
+         
+        </script>
+        
+    </body>
+
+</html>

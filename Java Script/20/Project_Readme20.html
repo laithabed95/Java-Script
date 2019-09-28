@@ -1,0 +1,40 @@
+﻿<html>
+    <head>
+    <title> move image javascript mouse </title> 
+    <style >
+        img{
+            height: 120px;
+            width: 120px;
+            position:absolute;          
+            
+        }
+        
+        </style>
+
+    </head>
+    <body onmousemove="move();">    
+        
+        <img id="i1" src="1.png" graggable="false"
+             onmousedown="d=true;" onmouseup="d=false;"/>
+        
+        
+     <script>    
+           
+             var d=false ;
+         function move() {
+             
+             if(d==true){
+                 window.i1.style.left=window.event.clientX-60;
+                 window.i1.style.top=window.event.clientY-60;
+                 
+             }
+         }
+        
+       
+        </script>
+        
+        
+        
+    </body>
+
+</html>

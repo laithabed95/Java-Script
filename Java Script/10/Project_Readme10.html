@@ -1,0 +1,37 @@
+﻿<html>
+    <head>
+    <title>parameters with function  </title> 
+    
+        <script>
+            function sayhello (name){
+                window.lbl.innerHTML="Hello "+name;                     
+            }
+            function sayhello2 (name,textbox){
+                window.lbl.innerHTML="hello "+name;
+                textbox.value="Done";
+            }
+            function showinfo (id=1,name="Laith",address="Aqaba"){
+                
+                var msg ="ID :"+id
+                        +"<br> Name :"+name
+                        +"<br>Address :"+address;
+                window.lbl.innerHTML=msg
+            }
+              
+          
+        </script>
+        
+        
+    </head>
+    <body> 
+        <h1 id="lbl"></h1>
+        <button onclick="sayhello('ahmad');"> click Here</button>
+        <br><br>
+        <button onclick="sayhello2('Laith',window.txt);"> click Here</button>
+        <button onclick="showinfo(1,'Laith');"> Info</button>
+        <input id="txt">
+    
+
+    </body>
+
+</html>

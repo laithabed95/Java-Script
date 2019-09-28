@@ -1,0 +1,48 @@
+﻿<html>
+    <head>
+    <title> getElementsByTagName getElementsByClassName </title> 
+    
+
+    </head>
+    <body>    
+        
+        <h1 class="my" style="color: red"> Welcome 1</h1> 
+        <h1> Welcome 2</h1>
+        <h1 class="my" style="color: blue"> Welcome 3</h1>
+        <input/>
+        <input/>
+        <input class="my" style="background-color: aqua"/>
+        <button>Run 1</button>
+        <button>Run 2</button>
+        <button>Run 3</button>
+        <hr>
+        <h3> Get Element By Class Name</h3>
+        
+        <p id="msg">  </p>
+        
+        
+        <script>    
+            var all1=document.getElementsByClassName("my");
+            for (x=0;x<all1.length;x++){
+                window.msg.innerHTML+=all1[x].tagName+" ;"+"<br>";
+            }
+            
+            var all2 =document.getElementsByTagName("INPUT");
+             for (x=0;x<all2.length;x++){
+               
+               
+                 if (all2[x].tagName=="INPUT"){
+                     all2[x].value="Hello By tag Name";
+                 }
+                
+            }
+            
+            
+       
+        </script>
+        
+        
+        
+    </body>
+
+</html>

@@ -1,0 +1,82 @@
+﻿<html>
+    <head>
+    <title> [R-EXP] </title> 
+    <h1> String Methods </h1>
+    </head>
+    <body>
+        <h1 id="h"> </h1>
+        
+        
+        
+        
+        
+        <script>
+            function run(str){
+                window.h.innerHTML=str;
+                
+                
+            }
+            var text="Hello Laith, Welcome Back Laith, Hi Laith";
+            
+            var s =text.indexOf("Laith");
+            run(s);
+            document.write('indexOf("Laith"); = 6<br> <br>');
+            
+              
+            var s =text.indexOf("Laith",30);
+            run(s);
+            document.write('indexOf("Laith",30);= 36<br> <br>');
+            
+               var s =text.lastIndexOf("Laith");
+            run(s);
+            document.write('lastIndexOf("Laith");= 36<br> <br>');
+            
+              var s =text.slice(0,5);
+            run(s);
+            document.write('text.slice(0,5);= Hello<br> <br>');
+            
+                   var s =text.substr(5,6);
+            run(s);
+            document.write('text.substr(5,6);= Laith<br> <br>');
+            
+            var s=text.replace("Hi","Welcome");
+            run(s);
+            document.write('replace("Hi","Welcome");= Hello Laith, Welcome Back Laith, Welcome Laith<br> <br>');
+            
+            var s=text.toUpperCase();
+            run(s);
+            document.write('toUpperCase();= HELLO LAITH, WELCOME BACK LAITH, HI LAITH<br> <br>');
+            
+            var s=text[0];
+            run(s);
+            document.write('var s=text[0];= H<br> <br>');       
+        
+            var s=text.charAt(6);
+            run(s);
+            document.write('text.charAt(6);= L<br> <br>');   
+            
+            var s=text.split(" ");
+            run(s[0]);
+            document.write('text.split(" ");= Hello<br> <br>');               
+            
+            
+            
+            
+            
+            
+        
+        </script>
+    
+        
+    </body>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</html>
